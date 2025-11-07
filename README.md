@@ -24,4 +24,4 @@
 | --------------- | ------------------------------- |
 | ganteng maksimal| Hafizh                          |
 | ganteng aja     | sisanya                         |
-
+| ganteng dikit   | pokonya bukan hafizh            |
