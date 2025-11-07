@@ -20,8 +20,8 @@
 
 ## Siapa yang paling ganteng
 
-| ganteng        | nama                            |
-| -------------- | ------------------------------- |
-| gantengmaksimal| Hafizh                          |
-| ganteng aja    | sisanya                         |
+| ganteng         | nama                            |
+| --------------- | ------------------------------- |
+| ganteng maksimal| Hafizh                          |
+| ganteng aja     | sisanya                         |
 
