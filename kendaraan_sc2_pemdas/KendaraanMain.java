@@ -1,3 +1,4 @@
+package kendaraan_sc2_pemdas;
 import java.util.ArrayList;
 import java.util.Scanner;
 
