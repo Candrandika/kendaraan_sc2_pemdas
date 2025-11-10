@@ -17,3 +17,5 @@
 | Class Abstract | Candra                          |
 | Class Turunan  | Filbert & Hafizh                |
 | Main Function  | Filbert, Candra, Hafizh & Arkan |
+
+hehe
