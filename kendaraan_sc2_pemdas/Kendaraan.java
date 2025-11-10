@@ -22,7 +22,7 @@ abstract class Kendaraan {
         return biayaHarian * hari + this.hitungBiayaTambahan();
     }
     public void tampilkanDetail() {
-        System.out.printf("ID: %s, Nama: %s, Biaya Harian: Rp %f, Status: %s\n", this.id, this.nama, this.biayaHarian, this.tersedia ? "Tersedia" : "Tidak Tersedia");
+        System.out.printf("ID: %s, Nama: %s, Biaya Harian: Rp %.0f, Status: %s\n", this.id, this.nama, this.biayaHarian, this.tersedia ? "Tersedia" : "Tidak Tersedia");
     }
 
     protected abstract double hitungBiayaTambahan();
