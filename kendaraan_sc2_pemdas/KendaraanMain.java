@@ -61,7 +61,7 @@ public class KendaraanMain {
             if(pil == 4) cariKendaraanTersedia(inventaris);
 
             in.nextLine();
-        } while(pil == 0);
+        } while(pil != 0);
     }
 
     public static void tampilkanSemuaKendaraan(ArrayList<Kendaraan> inventaris) {
