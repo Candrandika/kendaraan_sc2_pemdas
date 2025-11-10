@@ -82,7 +82,7 @@ public class KendaraanMain {
         in.nextLine();
         for(Kendaraan k : inventaris) {
             if(k.getId().equals(id)) {
-                System.out.printf("Biaya total sewa kendaraan %s selama %d hari adalah Rp %f\n", k.getNama(), hari, k.hitungBiayaTotal(hari));
+                System.out.printf("Biaya total sewa kendaraan %s selama %d hari adalah Rp %.2f\n", k.getNama(), hari, k.hitungBiayaTotal(hari));
                 return;
             }
         }
