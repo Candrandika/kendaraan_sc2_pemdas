@@ -17,11 +17,3 @@
 | Class Abstract | Candra                          |
 | Class Turunan  | Filbert & Hafizh                |
 | Main Function  | Filbert, Candra, Hafizh & Arkan |
-
-## Siapa yang paling ganteng
-
-| ganteng         | nama                            |
-| --------------- | ------------------------------- |
-| ganteng maksimal| Hafizh                          |
-| ganteng aja     | sisanya                         |
-| ganteng dikit   | pokonya bukan hafizh            |
