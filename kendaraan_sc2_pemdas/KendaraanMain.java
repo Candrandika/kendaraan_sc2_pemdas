@@ -49,11 +49,11 @@ public class KendaraanMain {
         int pil = 0;
         
         do {
-            System.out.println("Pilih operasi:");
             System.out.println("1. Tampilkan semua kendaraan");
             System.out.println("2. Hitung biaya kendaraan"); //input id sm hari
             System.out.println("3. Cari kendaraan tersedia"); //input type
             System.out.println("0. Keluar");
+            System.out.println("Pilih operasi:");
             pil = in.nextInt();
             
             if(pil == 1) tampilkanSemuaKendaraan(inventaris);
@@ -61,7 +61,9 @@ public class KendaraanMain {
             if(pil == 4) cariKendaraanTersedia(inventaris);
 
             in.nextLine();
-        } while(pil == 0);
+        } while(pil != 0);
+        
+        in.close();
     }
 
     public static void tampilkanSemuaKendaraan(ArrayList<Kendaraan> inventaris) {
@@ -76,10 +78,11 @@ public class KendaraanMain {
         String id = in.nextLine();
         System.out.print("Masukkan jumlah hari sewa: ");
         int hari = in.nextInt();
+        in.close();
         in.nextLine();
         for(Kendaraan k : inventaris) {
             if(k.getId().equals(id)) {
-                System.out.printf("Biaya total sewa kendaraan %s selama %d hari adalah Rp %f\n", k.getNama(), hari, k.hitungBiayaTotal(hari));
+                System.out.printf("Biaya total sewa kendaraan %s selama %d hari adalah Rp %.2f\n", k.getNama(), hari, k.hitungBiayaTotal(hari));
                 return;
             }
         }
@@ -101,5 +104,6 @@ public class KendaraanMain {
                 k.tampilkanDetail();
             }
         }
+        in.close();
     }
 }
