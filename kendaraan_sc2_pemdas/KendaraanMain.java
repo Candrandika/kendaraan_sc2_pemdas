@@ -7,14 +7,18 @@ public class KendaraanMain {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         ArrayList<Kendaraan> inventaris = new ArrayList<>();
-
-        for(int i = 0; i < 5; i++) {
-            System.out.println("Pilih kendaraan:");
+        int countAdded = 0;
+        while(countAdded < 5) {
             System.out.println("1. Mobil");
             System.out.println("2. Motor");
             System.out.println("3. Truk");
+            System.out.print("Pilih kendaraan: ");
             int pilih = in.nextInt();
             in.nextLine();
+            if(pilih < 1 || pilih > 3) {
+                System.out.println("Pilihan tidak valid\n");
+                continue;
+            }
             System.out.print("Masukkan ID: ");
             String id = in.nextLine();
             System.out.print("Masukkan nama: ");
@@ -44,22 +48,26 @@ public class KendaraanMain {
                     System.out.println("Pilihan tidak valid");
                     break;
             }
+            countAdded++;
+            System.out.println();
         }
         
         int pil = 0;
         
         do {
             System.out.println("1. Tampilkan semua kendaraan");
-            System.out.println("2. Hitung biaya kendaraan"); //input id sm hari
-            System.out.println("3. Cari kendaraan tersedia"); //input type
+            System.out.println("2. Hitung biaya kendaraan");
+            System.out.println("3. Cari kendaraan tersedia");
             System.out.println("0. Keluar");
-            System.out.println("Pilih operasi:");
+            System.out.print("Pilih operasi:");
             pil = in.nextInt();
+            System.out.println();
             
             if(pil == 1) tampilkanSemuaKendaraan(inventaris);
             if(pil == 2) hitungBiayaKendaraan(inventaris);
             if(pil == 4) cariKendaraanTersedia(inventaris);
 
+            System.out.println();
             in.nextLine();
         } while(pil != 0);
         
@@ -78,7 +86,6 @@ public class KendaraanMain {
         String id = in.nextLine();
         System.out.print("Masukkan jumlah hari sewa: ");
         int hari = in.nextInt();
-        in.close();
         in.nextLine();
         for(Kendaraan k : inventaris) {
             if(k.getId().equals(id)) {
@@ -104,6 +111,5 @@ public class KendaraanMain {
                 k.tampilkanDetail();
             }
         }
-        in.close();
     }
 }
