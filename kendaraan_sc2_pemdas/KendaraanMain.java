@@ -103,10 +103,11 @@ public class KendaraanMain {
         
         for(Kendaraan k : inventaris) {
             if(
-                k.isTersedia() 
-                && (type.equals("Mobil") && k instanceof Mobil)
-                && (type.equals("Motor") && k instanceof Motor)
-                && (type.equals("Truk") && k instanceof Truk)
+                (k.isTersedia()) && (
+                    (type.equals("Mobil") && k instanceof Mobil)
+                    || (type.equals("Motor") && k instanceof Motor)
+                    || (type.equals("Truk") && k instanceof Truk)
+                )
             ) {
                 k.tampilkanDetail();
             }
