@@ -19,7 +19,7 @@ abstract class Kendaraan {
     public boolean isTersedia() {return tersedia;}
     public double hitungBiayaTotal(int hari) {
         if(hari <= 0) throw new IllegalArgumentException("Hari sewa harus positif");
-        return biayaHarian * hari + this.hitungBiayaTambahan();
+        return biayaHarian * hari + (this instanceof Motor ? hari * this.hitungBiayaTambahan() : this.hitungBiayaTambahan());
     }
     public void tampilkanDetail() {
         System.out.printf("ID: %s, Nama: %s, Biaya Harian: Rp %.0f, Status: %s\n", this.id, this.nama, this.biayaHarian, this.tersedia ? "Tersedia" : "Tidak Tersedia");

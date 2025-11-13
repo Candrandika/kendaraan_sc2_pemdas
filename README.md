@@ -25,5 +25,5 @@
 | 1    | Desain UML & Class Abstract |
 | 2    | Class Turunan               |
 | 3    | Main Function               |
-| 4-5  | Perbaikan                   |
+| 4-6  | Perbaikan                   |
 | 5-6  | Pengerjaan Laporan          |
