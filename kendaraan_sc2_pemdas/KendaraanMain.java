@@ -65,7 +65,7 @@ public class KendaraanMain {
             
             if(pil == 1) tampilkanSemuaKendaraan(inventaris);
             if(pil == 2) hitungBiayaKendaraan(inventaris);
-            if(pil == 4) cariKendaraanTersedia(inventaris);
+            if(pil == 3) cariKendaraanTersedia(inventaris);
 
             System.out.println();
             in.nextLine();
